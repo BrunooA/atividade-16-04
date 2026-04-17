@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #000, #ff0055);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* POSTS */
+main {
+  flex: 3;
+}
+
+.post {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post h2 {
+  margin: 10px 0;
+}
+
+.post p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.post button {
+  background: #ff0055;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post button:hover {
+  background: #cc0044;
+}
+
+/* SIDEBAR */
+aside {
+  flex: 1;
+}
+
+.sidebar-box {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.sidebar-box h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar-box ul {
+  list-style: none;
+}
+
+.sidebar-box li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+.sidebar-box li:hover {
+  color: #ff0055;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.post img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}

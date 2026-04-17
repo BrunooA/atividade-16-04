@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+/* HEADER */
+.header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex: 1;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* CONTEÚDO */
+.content {
+  flex: 1;
+  padding: 40px;
+  color: #1f2937;
+}
+
+/* BOX INTERNO (efeito vidro) */
+.content {
+  background: rgba(255,255,255,0.85);
+  margin: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* TÍTULOS */
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #4b5563;
+}
+
+/* TEXTO */
+.content p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  flex: 1;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* FOOTER */
+.footer {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
